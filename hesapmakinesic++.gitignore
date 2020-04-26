@@ -1,32 +1,59 @@
-# Prerequisites
-*.d
+#include <iostream>
+using namespace std;
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
+int main() {
+    int a,b;
+    string islem;
+    
+    cout<<"hesap makinesi"<<endl;
+    
+    cout<<"toplama 1.işlem"<<endl;
+	
+	cout<<"cıkarma 2.işlem"<<endl;
+	cout<<"carpma 3.işlem"<<endl;
+	cout<<"bolme 4.işlem"<<endl;
+	
+	cout<<"işlemi giriniz:";
+	cin>>islem;
+	
+	if(islem=="1"){
+	    cout << "a:";
+	    cin >>a;
+	     cout << "b:";
+	    cin >> b; 
+	     cout << "toplamları:" << a+b << endl;
+	}
+	      
+	      	else if(islem=="2"){
+	    cout<< "a:";
+	    cin>>a;
+	     cout<< "b:";
+	    cin>>b;
+	  cout<<"cıkarma:"<<a-b<<endl;  
+	  
+	}
+	else	if(islem=="3"){
+	    cout<< "a:";
+	    cin>>a;
+	     cout<< "b:";
+	    cin>>b;
+	  cout<<"carpma:"<<a*b<<endl;  
+	  
+	  
+	}
+	else if(islem=="4"){
+	    cout<< "a:";
+	    cin>>a;
+	     cout<< "b:";
+	    cin>>b;
+	    cout<<"bolme"<<a/b<<endl;
+	 
+	    
+	 
+	}
+	  
+	else{
+	    cout<<  "gecersiz"<<endl;
+	}
+	
+}
